@@ -1,0 +1,25 @@
+Dependencies for Project 'led_flow_register_pro', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
+F (.\Start\core_cm3.h)(0x4D523B5A)()
+F (.\Start\startup_stm32f10x_hd.s)(0x532BB241)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Users\johan\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 538" --pd "STM32F10X_HD SETA 1"--list .\listings\startup_stm32f10x_hd.lst --xref -o .\objects\startup_stm32f10x_hd.o --depend .\objects\startup_stm32f10x_hd.d)
+F (.\Start\stm32f10x.h)(0x4F1E2E3E)()
+F (.\Start\system_stm32f10x.h)(0x4F1E2E3E)()
+F (.\User\main.c)(0x6714F5B4)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\User -I .\Start -I .\Hardware\include\LED-IC:\Users\johan\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
+I (.\Hardware\include\LED\led.h)(0x6714F513)
+I (.\Start\stm32f10x.h)(0x4F1E2E3E)
+I (.\Start\core_cm3.h)(0x4D523B5A)
+I (.\Start\system_stm32f10x.h)(0x4F1E2E3E)
+I (User\delay.h)(0x6714EF8A)
+F (.\User\delay.c)(0x6714EF8A)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\User -I .\Start -I .\Hardware\include\LED-IC:\Users\johan\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (User\delay.h)(0x6714EF8A)
+I (.\Start\stm32f10x.h)(0x4F1E2E3E)
+I (.\Start\core_cm3.h)(0x4D523B5A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
+I (.\Start\system_stm32f10x.h)(0x4F1E2E3E)
+F (.\Hardware\src\LED\led.c)(0x6714F510)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\User -I .\Start -I .\Hardware\include\LED-IC:\Users\johan\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (.\Hardware\include\LED\led.h)(0x6714F513)
+I (.\Start\stm32f10x.h)(0x4F1E2E3E)
+I (.\Start\core_cm3.h)(0x4D523B5A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
+I (.\Start\system_stm32f10x.h)(0x4F1E2E3E)
