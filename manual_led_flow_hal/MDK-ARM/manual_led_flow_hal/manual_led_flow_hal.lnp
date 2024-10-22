@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"manual_led_flow_hal\startup_stm32f103xe.o"
+"manual_led_flow_hal\main.o"
+"manual_led_flow_hal\gpio.o"
+"manual_led_flow_hal\stm32f1xx_it.o"
+"manual_led_flow_hal\stm32f1xx_hal_msp.o"
+"manual_led_flow_hal\led.o"
+"manual_led_flow_hal\stm32f1xx_hal_gpio_ex.o"
+"manual_led_flow_hal\stm32f1xx_hal_tim.o"
+"manual_led_flow_hal\stm32f1xx_hal_tim_ex.o"
+"manual_led_flow_hal\stm32f1xx_hal.o"
+"manual_led_flow_hal\stm32f1xx_hal_rcc.o"
+"manual_led_flow_hal\stm32f1xx_hal_rcc_ex.o"
+"manual_led_flow_hal\stm32f1xx_hal_gpio.o"
+"manual_led_flow_hal\stm32f1xx_hal_dma.o"
+"manual_led_flow_hal\stm32f1xx_hal_cortex.o"
+"manual_led_flow_hal\stm32f1xx_hal_pwr.o"
+"manual_led_flow_hal\stm32f1xx_hal_flash.o"
+"manual_led_flow_hal\stm32f1xx_hal_flash_ex.o"
+"manual_led_flow_hal\stm32f1xx_hal_exti.o"
+"manual_led_flow_hal\system_stm32f1xx.o"
+--strict --scatter "manual_led_flow_hal\manual_led_flow_hal.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "manual_led_flow_hal.map" -o manual_led_flow_hal\manual_led_flow_hal.axf
