@@ -35,7 +35,7 @@ void EXTI4_IRQHandler(void)
     EXTI->PR |= EXTI_PR_PR4;
 
     // 防抖动
-    Dealy_ms(1);
+    Dealy_ms(10);
 
     // 判断如果依然保持高电平，则翻转
     if((GPIOE->IDR & GPIO_IDR_IDR4) != 0)

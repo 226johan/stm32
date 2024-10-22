@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"key_led_flow_hal\startup_stm32f103xe.o"
+"key_led_flow_hal\main.o"
+"key_led_flow_hal\gpio.o"
+"key_led_flow_hal\stm32f1xx_it.o"
+"key_led_flow_hal\stm32f1xx_hal_msp.o"
+"key_led_flow_hal\led.o"
+"key_led_flow_hal\stm32f1xx_hal_gpio_ex.o"
+"key_led_flow_hal\stm32f1xx_hal_tim.o"
+"key_led_flow_hal\stm32f1xx_hal_tim_ex.o"
+"key_led_flow_hal\stm32f1xx_hal.o"
+"key_led_flow_hal\stm32f1xx_hal_rcc.o"
+"key_led_flow_hal\stm32f1xx_hal_rcc_ex.o"
+"key_led_flow_hal\stm32f1xx_hal_gpio.o"
+"key_led_flow_hal\stm32f1xx_hal_dma.o"
+"key_led_flow_hal\stm32f1xx_hal_cortex.o"
+"key_led_flow_hal\stm32f1xx_hal_pwr.o"
+"key_led_flow_hal\stm32f1xx_hal_flash.o"
+"key_led_flow_hal\stm32f1xx_hal_flash_ex.o"
+"key_led_flow_hal\stm32f1xx_hal_exti.o"
+"key_led_flow_hal\system_stm32f1xx.o"
+--strict --scatter "key_led_flow_hal\key_led_flow_hal.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "key_led_flow_hal.map" -o key_led_flow_hal\key_led_flow_hal.axf
