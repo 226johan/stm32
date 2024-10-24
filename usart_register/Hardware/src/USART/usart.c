@@ -43,10 +43,37 @@ uint8_t USART_ReceiverChar(void)
 {
     while((USART1->SR & USART_SR_RXNE)==0)
     {
+        if(USART1->SR & USART_SR_IDLE)
+        {
+            return 0;
+        }
 
     }
     // 读取接收到的数据,等待接收下一个数据
     return USART1->DR;
 
+}
+
+void USART_SendString(uint8_t *str,uint8_t size)
+{
+    for(uint8_t i=0;i<size;i++)
+    {
+        USART_SendChar(str[i]);
+    }
+}
+
+void USART_ReceiveString(uint8_t buffer[],uint8_t *size)
+{
+    uint8_t i=0;
+    while (1)
+    {
+        while((USART1->SR & USART_SR_IDLE)==0)
+        {
+            buffer[i] = USART_ReceiverChar();
+            i++;
+        }
+        USART1->DR; //清空接收缓存
+        *size = --i;
+    }
 }
 

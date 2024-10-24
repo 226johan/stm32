@@ -27,11 +27,23 @@ Project File Date:  10/23/2024
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
+compiling key.c...
+compiling led.c...
+Hardware\src\LED\led.c(54): warning:  #167-D: argument of type "uint32_t" is incompatible with parameter of type "GPIO_TypeDef *"
+          LED_On(led_GPIO[i]->ODR,leds[i]);
+Hardware\src\LED\led.c(61): warning:  #167-D: argument of type "uint32_t" is incompatible with parameter of type "GPIO_TypeDef *"
+          LED_Off(led_GPIO[i]->ODR,leds[i]);
+Hardware\src\LED\led.c: 2 warnings, 0 errors
 compiling main.c...
+User\main.c(13): warning:  #223-D: function "strlen" declared implicitly
+  	USART_SendString(str, strlen((char*)str));
+User\main.c: 1 warning, 0 errors
+compiling delay.c...
+compiling usart.c...
 linking...
-Program Size: Code=740 RO-data=320 RW-data=0 ZI-data=1632  
+Program Size: Code=864 RO-data=320 RW-data=0 ZI-data=1632  
 FromELF: creating hex file...
-".\Objects\led_register.axf" - 0 Error(s), 0 Warning(s).
+".\Objects\led_register.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 

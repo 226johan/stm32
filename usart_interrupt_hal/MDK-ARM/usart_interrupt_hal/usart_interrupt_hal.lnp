@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"usart_interrupt_hal\startup_stm32f103xe.o"
+"usart_interrupt_hal\main.o"
+"usart_interrupt_hal\gpio.o"
+"usart_interrupt_hal\usart.o"
+"usart_interrupt_hal\stm32f1xx_it.o"
+"usart_interrupt_hal\stm32f1xx_hal_msp.o"
+"usart_interrupt_hal\stm32f1xx_hal_gpio_ex.o"
+"usart_interrupt_hal\stm32f1xx_hal_tim.o"
+"usart_interrupt_hal\stm32f1xx_hal_tim_ex.o"
+"usart_interrupt_hal\stm32f1xx_hal_uart.o"
+"usart_interrupt_hal\stm32f1xx_hal.o"
+"usart_interrupt_hal\stm32f1xx_hal_rcc.o"
+"usart_interrupt_hal\stm32f1xx_hal_rcc_ex.o"
+"usart_interrupt_hal\stm32f1xx_hal_gpio.o"
+"usart_interrupt_hal\stm32f1xx_hal_dma.o"
+"usart_interrupt_hal\stm32f1xx_hal_cortex.o"
+"usart_interrupt_hal\stm32f1xx_hal_pwr.o"
+"usart_interrupt_hal\stm32f1xx_hal_flash.o"
+"usart_interrupt_hal\stm32f1xx_hal_flash_ex.o"
+"usart_interrupt_hal\stm32f1xx_hal_exti.o"
+"usart_interrupt_hal\system_stm32f1xx.o"
+--strict --scatter "usart_interrupt_hal\usart_interrupt_hal.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "usart_interrupt_hal.map" -o usart_interrupt_hal\usart_interrupt_hal.axf

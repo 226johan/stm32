@@ -9,6 +9,9 @@ int main(void)
 	USART_SendChar('t');
 	USART_SendChar('\n');
 
+	uint8_t * str = "Hello World!\n";
+	USART_SendString(str, strlen((char*)str));
+
 
 	while(1)
 	{
