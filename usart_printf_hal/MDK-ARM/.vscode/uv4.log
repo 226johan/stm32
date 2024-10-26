@@ -1,0 +1,3 @@
+Load "usart_printf_hal\\usart_printf_hal.axf" 
+Erase Done.Programming Done.Verify OK.Application running ...
+Flash Load finished at 16:30:13

@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"usart_printf_hal\startup_stm32f103xe.o"
+"usart_printf_hal\main.o"
+"usart_printf_hal\gpio.o"
+"usart_printf_hal\usart.o"
+"usart_printf_hal\stm32f1xx_it.o"
+"usart_printf_hal\stm32f1xx_hal_msp.o"
+"usart_printf_hal\stm32f1xx_hal_gpio_ex.o"
+"usart_printf_hal\stm32f1xx_hal_tim.o"
+"usart_printf_hal\stm32f1xx_hal_tim_ex.o"
+"usart_printf_hal\stm32f1xx_hal_uart.o"
+"usart_printf_hal\stm32f1xx_hal.o"
+"usart_printf_hal\stm32f1xx_hal_rcc.o"
+"usart_printf_hal\stm32f1xx_hal_rcc_ex.o"
+"usart_printf_hal\stm32f1xx_hal_gpio.o"
+"usart_printf_hal\stm32f1xx_hal_dma.o"
+"usart_printf_hal\stm32f1xx_hal_cortex.o"
+"usart_printf_hal\stm32f1xx_hal_pwr.o"
+"usart_printf_hal\stm32f1xx_hal_flash.o"
+"usart_printf_hal\stm32f1xx_hal_flash_ex.o"
+"usart_printf_hal\stm32f1xx_hal_exti.o"
+"usart_printf_hal\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "usart_printf_hal\usart_printf_hal.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "usart_printf_hal.map" -o usart_printf_hal\usart_printf_hal.axf
